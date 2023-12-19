@@ -45,7 +45,7 @@ const alertMessage = document.querySelector('.alertMessage');
 
 const showAlert = (message, color) => {
     alertMessage.textContent = message;
-    // customAlert.style.backgroundColor = color;
+    customAlert.style.backgroundColor = color;
     customAlert.style.display = 'block';
 
     setTimeout(() => {
@@ -66,7 +66,6 @@ if (firstName !== "" && lastName !== "" && email === "adminadminov@gmail.com" &&
 } else(
     showAlert("Please enter your information correctly!", '#f44336')
     )   
-    firstName.value = "";
 };
     
 form.addEventListener('submit', info);

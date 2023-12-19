@@ -180,13 +180,13 @@
                         <h3 class="fw-bold abc">Login</h3>
                         <p class="mt-4 opacity-75" style="font-size: 15px;">Please login using account detail bellow.
                         </p>
-                        <form action="" class="row mt-5 d-flex align-items-center gap-5">
+                        <form class="row mt-5 d-flex align-items-center gap-5">
                             <label for="email" class="col-sm-3 opacity-75">Email</label>
-                            <input class="col-sm-9 inputOne" type="text" placeholder="Email" required>
+                            <input class="col-sm-9 inputOne" id="email" type="email" placeholder="Email" required>
                         </form>
-                        <form action="" class="row mt-3 d-flex align-items-center gap-5">
+                        <form class="form row mt-3 d-flex align-items-center gap-5">
                             <label for="email" class="col-sm-3 opacity-75">Password</label>
-                            <input class="col-sm-9 inputTwo" type="text" placeholder="Password" required>
+                            <input class="col-sm-9 inputTwo" id="password" type="password" placeholder="Password" required>
                         </form>
                         <div class="details mt-2">
                             <a href="./forgotpassword.html" class="text-dark">Forgot Your Password?</a><br><br>
@@ -195,6 +195,9 @@
                         <div class="login-footer">
                             <hr class="m-auto mt-4" style="width: 90%;">
                             <a class="mt-4 d-block text-dark" href="./createaccount.html">Create account</a>
+                        </div>
+                        <div class="custom-alert" >
+                            <p class="alertMessage"></p>
                         </div>
                     </div>
                 </div>
