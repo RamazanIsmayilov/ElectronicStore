@@ -1,0 +1,555 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+@import url("../css/normalize.css");
+
+
+body{
+  width: 100vw;
+  overflow-x: hidden;
+}
+/*! Header start */
+
+/* header{
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+} */
+
+.navbar-nav .electronics:hover>ul.dropdown-menu {
+  display: flex;
+  gap: 60px;
+  padding: 15px;
+}
+.navbar-nav li:hover>ul.dropdown-menu {
+  display: block;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+}
+
+.dropdown-menu>li>a:hover:after {
+  text-decoration: underline;
+  transform: rotate(-90deg);
+}
+
+.dropdown-menu {
+  line-height: 30px;
+  padding: 10px;
+  border: none;
+  box-shadow: -2px 2px 81px -27px rgba(0, 0, 0, .3);
+}
+
+.dropdown-menu a:hover {
+  color: red;
+}
+
+.dropdown-toggle {
+  color: #fff;
+}
+
+.icons i {
+  cursor: pointer;
+  transition: .6s;
+}
+
+.icons i:hover {
+  color: red !important;
+}
+
+@media(max-width: 992px) {
+  .heading {
+    display: none;
+  }
+}
+
+/*! Header end */
+
+/*! Hero start */
+
+.hero {
+  padding-bottom: 10px;
+  background-image: url("../img/hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hero .text .button a {
+  font-size: 15px;
+  color: #fff;
+  background-color: #e52e06;
+  padding: 14px 34px 16px;
+  border-radius: 26px;
+  transition: .5s;
+}
+
+.hero .text .button a:hover {
+  background-color: #000;
+}
+
+/*! Hero end */
+
+/*! Trending start */
+.trending {
+  margin-top: 60px;
+  height: auto;
+}
+
+.trending .products .card img {
+  transition: .7s;
+}
+
+.trending .products .card:hover img {
+  transform: scale(1.1);
+}
+
+.trending .products .card h5 a {
+  transition: .6s;
+}
+
+.trending .products .card h5 a:hover {
+  color: #e52e06 !important;
+}
+
+.trending .shop .left,
+.trending .shop .right {
+  height: 385px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: .9s;
+}
+
+.trending .shop .left {
+  background-image: url("https://drou-electronics-store.myshopify.com/cdn/shop/files/sub-banner-1.jpg?v=1674276677");
+}
+
+.trending .shop .right {
+  background-image: url("https://drou-electronics-store.myshopify.com/cdn/shop/files/sub-banner-2.jpg?v=1674276677");
+}
+
+.trending .shop .left:hover {
+  background-size: 110%;
+}
+
+.trending .shop .right:hover {
+  background-size: 110%;
+}
+
+.trending .shop .button a {
+  font-size: 14px;
+  color: #fff;
+  background-color: #e52e06;
+  padding: 11px 20px 11px;
+  border-radius: 26px;
+  transition: .5s;
+}
+
+.trending .shop .left:hover .button a,
+.trending .shop .right:hover .button a {
+  background-color: #000;
+}
+
+@media(max-width: 992px) {
+
+  .trending .shop .left,
+  .trending .shop .right {
+    background-size: 140%;
+  }
+}
+
+/*! Trending end */
+
+/*! Latest start */
+.latest {
+  margin-top: 60px;
+  height: auto;
+}
+
+.latest .products .card {
+  box-shadow: 0 0 10px #0000001a;
+}
+
+.latest .products .card .card-heading .img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 110%;
+  transition: .9s;
+}
+
+.latest .products .one .card-heading .img {
+  background-image: url("https://drou-electronics-store.myshopify.com/cdn/shop/products/13_large.jpg?v=1674275345");
+
+}
+
+.latest .products .one:hover .img {
+  background-size: 120%;
+  background-image: url("https://drou-electronics-store.myshopify.com/cdn/shop/products/p4_b019dfc8-3740-44ac-8916-6db66a336feb_large.jpg?v=1674275345");
+}
+
+.latest .products .two .card-heading .img {
+  background-image: url("https://drou-electronics-store.myshopify.com/cdn/shop/products/p2_ea1ad2a2-ba0d-4dd2-b29a-e51fd931583b_large.jpg?v=1674275324");
+
+}
+
+.latest .products .two:hover .card-heading .img {
+  background-size: 120%;
+  background-image: url("https://drou-electronics-store.myshopify.com/cdn/shop/products/p1_c084b79e-4c5b-4790-a7fe-00b1eb18b040_large.jpg?v=1674275324");
+}
+
+.latest .products .three .card-heading .img {
+  background-image: url("https://drou-electronics-store.myshopify.com/cdn/shop/products/11_c6c97b67-edac-48bd-8e5c-cf0de5e9e3cb_large.jpg?v=1674275302");
+
+}
+
+.latest .products .three:hover .card-heading .img {
+  background-size: 120%;
+  background-image: url("https://drou-electronics-store.myshopify.com/cdn/shop/products/p3_0dd10fdb-44b3-415b-b7c3-91896ecb3ee2_large.jpg?v=1674275302");
+}
+
+.latest .products .four .card-heading .img {
+  background-image: url("https://drou-electronics-store.myshopify.com/cdn/shop/products/p10_large.jpg?v=1674275306");
+
+}
+
+.latest .products .four:hover .card-heading .img {
+  background-size: 120%;
+  background-image: url("https://drou-electronics-store.myshopify.com/cdn/shop/products/p5_020e3c58-9f57-4388-b8d8-bb40db3b4c5e_large.jpg?v=1674275306");
+}
+
+.latest .products .five .card-heading .img {
+  background-image: url("https://drou-electronics-store.myshopify.com/cdn/shop/products/p9_large.jpg?v=1674275297");
+
+}
+
+.latest .products .five:hover .card-heading .img {
+  background-size: 120%;
+  background-image: url("https://drou-electronics-store.myshopify.com/cdn/shop/products/p7_6fe3391a-c2d0-4342-bd4c-70b486ce88ae_large.jpg?v=1674275297");
+}
+
+.latest .products .card-heading .action i {
+  border: 1px solid;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  transition: .3s;
+}
+
+.latest .products .card .action i:hover {
+  background-color: #e52e06;
+}
+
+.latest .products .card-heading .action {
+  opacity: 0;
+  transition: .5s;
+}
+
+.latest .products .card:hover .action {
+  opacity: 1;
+}
+
+.latest .products .card .card-body a {
+  font-size: 18px;
+  color: #000;
+  transition: .3s;
+}
+
+.latest .products .card .card-body a:hover {
+  color: #e52e06;
+}
+
+.latest .advertising {
+  width: 100%;
+  height: 500px;
+  margin-top: 70px;
+  background-image: url("https://drou-electronics-store.myshopify.com/cdn/shop/files/main-banner-01.jpg?v=1674276678");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.latest .advertising .text .button a {
+  font-size: 17px;
+  background-color: #e52e06;
+  padding: 14px 27px;
+  transition: .5s;
+}
+
+
+.latest .advertising .text .boxs .box {
+  width: 80px;
+  height: 80px;
+  box-shadow: 0 0 10px #0000001a;
+  border-radius: 12px;
+}
+
+.latest .advertising .text .shop a {
+  font-size: 21px;
+  transition: .4s;
+  color: #000;
+}
+
+.latest .advertising .text .shop a:hover {
+  color: #e52e06;
+}
+
+@media(max-width: 1200px) {
+  .latest .products .three {
+    display: none;
+  }
+
+  .latest .products {
+    gap: 8px;
+  }
+}
+
+/*! Latest end */
+
+/*! Popular start */
+.popular {
+  margin-top: 60px;
+  height: auto;
+}
+
+.popular .products .card {
+  box-shadow: 0 0 10px #0000001a;
+  /* width: 295px; */
+  height: 420px;
+}
+
+.popular .products .card .card-heading .img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 110%;
+  transition: .9s;
+}
+
+.popular .products .one .card-heading .img {
+  background-image: url("https://drou-electronics-store.myshopify.com/cdn/shop/products/p10_large.jpg?v=1674275306");
+}
+.popular .products .one:hover .img {
+  background-size: 120%;
+  background-image: url("https://drou-electronics-store.myshopify.com/cdn/shop/products/p5_020e3c58-9f57-4388-b8d8-bb40db3b4c5e_large.jpg?v=1674275306");
+}
+
+.popular .products .two .card-heading .img {
+  background-image: url("https://drou-electronics-store.myshopify.com/cdn/shop/products/13_large.jpg?v=1674275345");
+}
+.popular .products .two:hover .card-heading .img {
+  background-size: 120%;
+  background-image: url("https://drou-electronics-store.myshopify.com/cdn/shop/products/p4_b019dfc8-3740-44ac-8916-6db66a336feb_large.jpg?v=1674275345");
+}
+
+.popular .products .three .card-heading .img {
+  background-image: url("https://drou-electronics-store.myshopify.com/cdn/shop/products/12_large.jpg?v=1674275341");
+}
+.popular .products .three:hover .card-heading .img {
+  background-size: 120%;
+  background-image: url("https://drou-electronics-store.myshopify.com/cdn/shop/products/p10_78f5d5ed-818a-4a91-88a1-433a7f408c84_large.jpg?v=1674275341");
+}
+
+.popular .products .four .card-heading .img {
+  background-image: url("https://drou-electronics-store.myshopify.com/cdn/shop/products/p8_523c97c7-2aa2-47e8-8b17-5a3c05a66db3_large.jpg?v=1674275335");
+}
+.popular .products .four:hover .card-heading .img {
+  background-size: 120%;
+  background-image: url("https://drou-electronics-store.myshopify.com/cdn/shop/products/p7_36d931d4-1ef2-4c82-9a65-80426fb77f21_large.jpg?v=1674275335");
+}
+
+.popular .products .five .card-heading .img {
+  background-image: url("https://drou-electronics-store.myshopify.com/cdn/shop/products/p7_36d931d4-1ef2-4c82-9a65-80426fb77f21_large.jpg?v=1674275335");
+}
+.popular .products .five:hover .card-heading .img {
+  background-size: 120%;
+  background-image: url("https://drou-electronics-store.myshopify.com/cdn/shop/products/p6_large.jpg?v=1674275329");
+}
+
+.popular .products .six .card-heading .img {
+  background-image: url("https://drou-electronics-store.myshopify.com/cdn/shop/products/p1_large.jpg?v=1674275319");
+}
+.popular .products .six:hover .card-heading .img {
+  background-size: 120%;
+  background-image: url("	https://drou-electronics-store.myshopify.com/cdn/shop/products/p2_large.jpg?v=1674275320");
+}
+
+.popular .products .seven .card-heading .img {
+  background-image: url("	https://drou-electronics-store.myshopify.com/cdn/shop/products/p5_61c8ce6b-3afa-4276-a285-f98e4d5c7f67_large.jpg?v=1674275311");
+}
+.popular .products .seven:hover .card-heading .img {
+  background-size: 120%;
+  background-image: url("https://drou-electronics-store.myshopify.com/cdn/shop/products/p4_c46c6d30-4b9f-4971-96be-d28d9f0d5ee5_large.jpg?v=1674275311");
+}
+
+.popular .products .eight .card-heading .img {
+  background-image: url("https://drou-electronics-store.myshopify.com/cdn/shop/products/11_c6c97b67-edac-48bd-8e5c-cf0de5e9e3cb_large.jpg?v=1674275302");
+}
+.popular .products .eight:hover .card-heading .img {
+  background-size: 120%;
+  background-image: url("https://drou-electronics-store.myshopify.com/cdn/shop/products/p3_0dd10fdb-44b3-415b-b7c3-91896ecb3ee2_large.jpg?v=1674275302  ");
+}
+
+.popular .products .card-heading .action i {
+  border: 1px solid;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  transition: .3s;
+}
+
+.popular .products .card .action i:hover {
+  background-color: #e52e06;
+}
+
+.popular .products .card-heading .action {
+  opacity: 0;
+  transition: .5s;
+}
+
+.popular .products .card:hover .action {
+  opacity: 1;
+}
+
+.popular .products .card .card-body a {
+  font-size: 18px;
+  color: #000;
+  transition: .3s;
+}
+
+.popular .products .card .card-body a:hover {
+  color: #e52e06;
+} 
+
+/*! Popular end */
+
+/*! Blog start */
+.blog .events .card .image {
+  width: 100%;
+  height: 268px;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: .7s;
+}
+
+.blog .events .one .image {
+  background-image: url("https://drou-electronics-store.myshopify.com/cdn/shop/articles/04_684500ea-e527-4171-8e1a-07c34d71c243_grande.jpg?v=1674279180");
+}
+
+.blog .events .one:hover .image {
+  background-size: 105%;
+}
+
+.blog .events .two .image {
+  background-image: url("https://drou-electronics-store.myshopify.com/cdn/shop/articles/b1_a4c8283b-edba-463f-bcb7-d2cf8f3ce46f_grande.jpg?v=1674279118");
+}
+
+.blog .events .two:hover .image {
+  background-size: 105%;
+}
+
+.blog .events .three .image {
+  background-image: url("https://drou-electronics-store.myshopify.com/cdn/shop/articles/b2_74c4b7c0-e805-4704-a4ab-4e68c8e4eae2_grande.jpg?v=1674279232");
+}
+
+.blog .events .three:hover .image {
+  background-size: 105%;
+}
+
+.blog .events .card .text h6 {
+  transition: .6s;
+}
+
+.blog .events .card .text h6:hover {
+  color: #e52e06;
+
+}
+
+.blog .advertising {
+  width: 100%;
+  height: 460px;
+  background-image: url("https://drou-electronics-store.myshopify.com/cdn/shop/files/slide61.jpg?v=1674276677");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+.blog .advertising:hover {
+  background-size: 110%;
+}
+
+.blog .advertising .button a {
+  background-color: #e52e06;
+  padding: 10px 22px 10px;
+  border-radius: 26px;
+  transition: .4s;
+}
+
+.blog .advertising:hover .button a {
+  background-color: #000;
+}
+
+@media(max-width: 992px) {
+  .blog .advertising {
+    background-size: 150%;
+  }
+
+  .blog .advertising:hover {
+    background-size: 160%;
+  }
+}
+
+@media(max-width: 576px) {
+  .blog .advertising {
+    background-size: 160%;
+  }
+
+  .blog .advertising:hover {
+    background-size: 170%;
+  }
+}
+/*! Blog end */
+
+/*! Aside start */
+.aside{
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  background-color: #f8f8f8;
+}
+/*! Aside end */
+
+/*! Footer start  */
+footer .img img{
+  box-shadow: 0px 0px 20px 0px rgba(51, 51, 51, 0.1);
+}
+
+footer ul li a:hover{
+  transition: .3s;
+  color: #e52e06 !important;
+}
+
+@media(max-width: 576px) {
+  footer .img {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+/*! Footer end  */
+
+
