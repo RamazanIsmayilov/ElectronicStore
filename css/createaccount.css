@@ -1,13 +1,80 @@
-.login .login-form form input{
+/*! Preloader start */
+.preloader {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    z-index: 10000;
+}
+
+.preloader .center {
+    position: relative;
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+}
+
+.preloader .circle-one {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #e52e06;
+    animation: object-one 1.5s infinite;
+}
+
+@keyframes object-one {
+    75% {
+        transform: scale(0);
+    }
+}
+
+.preloader .circle-two {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #e52e06;
+    animation: object-one 1.4s infinite;
+}
+
+@keyframes object-two {
+    75% {
+        transform: scale(0);
+    }
+}
+
+.preloader .circle-three {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #e52e06;
+    animation: object-one 1.3s infinite;
+}
+
+@keyframes object-three {
+    75% {
+        transform: scale(0);
+    }
+}
+
+.mypage {
+    display: none;
+}
+
+/*! Preloader end */
+
+/*! Login start */
+
+.login .login-form form input {
     width: 300px;
     height: 35px;
     background-color: #ebebeb;
-    border:1px solid #ebebeb;
+    border: 1px solid #ebebeb;
     outline: none;
 }
 
 
-.white{
+.white {
     background-color: #fff !important;
 }
 
@@ -28,3 +95,4 @@
     margin: 0;
 }
 
+/*! Login end */
