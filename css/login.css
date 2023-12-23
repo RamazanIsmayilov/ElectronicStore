@@ -137,4 +137,13 @@
 /*! Login end  */
 
 
+.error{
+    background-color: #e52e06;
+}
+
+.success{
+    background-color: green;
+}
+
+
 

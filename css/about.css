@@ -1,5 +1,5 @@
 /*! Preloader start */
-.preloader {
+/* .preloader {
     width: 100%;
     height: 100%;
     background-color: #fff;
@@ -59,13 +59,90 @@
 
 .mypage {
     display: none;
-}
+} */
 
 /*! Preloader end */
 
+/*! Switch start */
 .switch {
     background-color: #f8f8f8;
     width: 100%;
     height: 120px;
     font-size: 14px;
 }
+/*! Switch end */
+
+/*! Information start */
+.information .card .card-body .icon i{
+    font-size: 60px;
+    color: #e52e06;
+}
+
+.information .difference{
+    box-shadow: 0 0 40px rgba(51, 51, 51, 0.1);
+    background-color: #ffffff;
+}
+
+.information .card{
+    transition: .4s;
+}
+.information .card:hover{
+    box-shadow: 0 0 40px rgba(51, 51, 51, 0.1);
+    background-color: #ffffff;
+}
+/*! Information end */
+
+/*! Team start */
+.team .card .img{
+    width: 270px;
+    height: 288px;
+    background-image: url("https://drou-electronics-store.myshopify.com/cdn/shop/files/1_480x480.jpg?v=1674276674");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: .7s;
+}
+.team .card:hover .img{
+    background-size: 110%;
+}
+
+.team .card .social-network{
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    opacity: 0;
+    transition: .7s;
+}
+
+.team .card:hover .social-network{
+    opacity: 1;
+}
+
+.team .card .card-heading .social-network i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: #696969;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.team .card .card-heading .social-network i:hover{
+    background-color: #e52e06;
+    color: #fff;
+}
+
+
+
+/*! Team end */
+
+
+

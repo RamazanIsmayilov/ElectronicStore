@@ -1,7 +1,7 @@
-const preLoader = document.querySelector('.preloader');
-const myPage = document.querySelector('.mypage');
+// const preLoader = document.querySelector('.preloader');
+// const myPage = document.querySelector('.mypage');
 
-setTimeout(() => {
-    preLoader.style.display = 'none';
-    myPage.style.display = 'block';
-}, 2000);
+// setTimeout(() => {
+//     preLoader.style.display = 'none';
+//     myPage.style.display = 'block';
+// }, 2000);
