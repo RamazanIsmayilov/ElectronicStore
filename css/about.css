@@ -165,7 +165,6 @@
 /*! Team end */
 
 /*! ContactUs start */
-
 .contactus{
     background-color: #f7f9fb;
     padding: 50px 0;
@@ -189,4 +188,22 @@
     border: none;
 }
 
+.contactus .info{
+    padding: 100px 10px;
+}
 /*! Contact-email end */
+
+/*! Clients start */
+.clients{
+    margin-bottom: 100px;
+}
+.clients .border{
+    background-color: #f8f8f8;
+    padding: 56px 32px 55px;
+
+}
+
+
+
+/*! Clients end */
+

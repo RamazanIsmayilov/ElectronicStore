@@ -134,8 +134,6 @@
 .custom-alert p {
     margin: 0;
 }
-/*! Login end  */
-
 
 .error{
     background-color: #e52e06;
@@ -144,6 +142,7 @@
 .success{
     background-color: green;
 }
+/*! Login end  */
 
 
 
