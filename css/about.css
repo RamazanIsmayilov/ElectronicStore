@@ -1,5 +1,5 @@
 /*! Preloader start */
-/* .preloader {
+.preloader {
     width: 100%;
     height: 100%;
     background-color: #fff;
@@ -59,8 +59,7 @@
 
 .mypage {
     display: none;
-} */
-
+}
 /*! Preloader end */
 
 /*! Switch start */
